@@ -34,25 +34,25 @@
     margin-top: 0.3rem;
 }
 
-.navbar .menu{
+.navbar .links{
     display: flex;
     gap: 3rem;
     margin-right: 2rem;
     font-weight: bold;
 }
 
-.navbar .menu .menu-menu{
+.navbar .links .menu-menu{
     display: flex;
     align-items: center;
     padding: 0 1rem 0 1rem;
     gap: 2rem;
 }
 
-.navbar .menu .menu-menu li{
+.navbar .links .menu-menu li{
     list-style: none;
 }
 
-.navbar .menu .menu-menu a{
+.navbar .links .menu-menu a{
     text-decoration: none;
 }
 
@@ -73,6 +73,10 @@
 .navbar button a{
     text-decoration: none;
     color: white;
+}
+
+.nav-toggle{
+    display: none;
 }
 
 /* head */
@@ -117,11 +121,12 @@
     display: flex;
     flex-direction: column;
     padding: 2rem;
+    font-size: 0.7rem;
 
 }
 
 .main-vision .text h2{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 5rem;
     text-align: justify;
     color: rgb(30, 99, 183);
@@ -131,7 +136,7 @@
 
 .main-vision .text p{
     text-align: justify;
-    font-size: 2rem
+    font-size: 1rem
 }
 
 .main-vision img{
@@ -147,7 +152,7 @@
 .main-motto{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0.5rem;
     background-color: rgb(128, 128, 128, 0.6);
     justify-content: center;
     align-items: center;
@@ -168,7 +173,7 @@
 }
 
 .main-motto .text-2{
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 1rem 3rem 1rem 3rem;
     text-align: center;
 }
@@ -185,7 +190,7 @@
 }
 
 .main-mission .text{
-    padding: 2rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,7 +205,7 @@
 }
 
 .main-mission p{
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 
@@ -242,10 +247,75 @@
 
 
 @media screen and (max-width: 800px){
+    body {
+        position: relative;
+      }
+
+
+    .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 100;
+        width: 100%;
+        display: block;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+      }
+
+    .links a {
+        font-size: 1rem;
+        text-transform: capitalize;
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s linear;
+      }
+      .links a:hover {
+        color: #000000;
+        padding: 0.5rem 1rem;
+      }
+     
+      .links {
+        height: 0;
+        overflow: hidden; 
+        display: block;
+        width: 100%;
+        transition: all 0.3s linear;
+      }
+      .show-links {
+        height: 15rem;
+      }
+
+    .nav-toggle {
+        display: block;
+        font-size: 1.5rem;
+        color: #000000;
+        background: transparent;
+        border-color: transparent;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    }
+    
+    .nav-toggle:hover {
+      transform: rotate(90deg);
+    }
+
+    .navbar .button{
+        display: none;
+    }
+    
+
     .main-vision{
         display: grid;
-        gap: 2rem;
-        padding: 1rem 0rem 1rem 0rem;
+        gap: 1rem;
+        padding: 0.5rem 0rem 0.5rem 0rem;
         text-align: center;
     }
 
