@@ -241,5 +241,51 @@
 }
 
 
+@media screen and (max-width: 800px){
+    .main-vision{
+        display: grid;
+        gap: 2rem;
+        padding: 1rem 0rem 1rem 0rem;
+        text-align: center;
+    }
+
+    .main-vision .text{
+        display: flex;
+        align-items: center;
+    }
+
+    .main-vision .text p{
+        text-align: center;
+    }
+
+    .main-mission{
+        display: grid;
+        text-align: center;
+        position: relative;
+        /* padding: 0rem 1rem 0rem 1rem; */
+    }
+
+    .main-mission img{
+        width: 100%;
+    }
+
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+      }
+    
+      .header p{
+        display: flex;
+        flex-direction: column;  
+      }
+    
+      .header p a{
+        color: gray;
+        text-decoration: none;
+      }
+    }
+
+
 
  

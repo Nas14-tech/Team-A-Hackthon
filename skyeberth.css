@@ -111,11 +111,24 @@ nav {
 
 .wwe{
   text-align: center;
+  background-color: rgb(128, 128, 128, 0.2);
 }
 
 .wwe h2{
   font-size: 3rem;
-  color: blue;
+}
+
+.wwe p{
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+.img{
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
 }
 
 /* footer */
@@ -151,7 +164,7 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    background: transparent;
+    background: white;
     z-index: 100;
     width: 100%;
     display: block;
@@ -394,6 +407,22 @@ nav {
   .main{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+  }
+
+  .foot{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .header p{
+    display: flex;
+    flex-direction: column;  
+  }
+
+  .header p a{
+    color: gray;
+    text-decoration: none;
   }
 }
 

@@ -267,6 +267,33 @@ body{
     gap: 1rem;
 }
 
+@media screen and (max-width: 800px){
+    .float{
+        width: 100%;
+        left: 0;
+    }
+
+    .rooms-tab{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+      }
+    
+      .header p{
+        display: flex;
+        flex-direction: column;  
+      }
+    
+      .header p a{
+        color: gray;
+        text-decoration: none;
+      }
+}
 
 
  
