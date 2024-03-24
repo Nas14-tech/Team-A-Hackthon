@@ -277,64 +277,11 @@ nav {
   background: #000000;
 }
 
-@media screen and (max-width: 1130px) {
-  .description {
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 2.043rem;
-    text-align: justify;
-  }
-
-  .section-1-container {
-    gap: 2rem;
-  }
-
-  .section-1-welcome {
-    gap: 1rem;
-  }
-
-  .heading {
-    top: 3%;
-    font-size: 5rem;
-  }
+.main{
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
 }
-
-@media screen and (max-width: 870px) {
-  .section-1 {
-    padding: 0;
-  }
-
-  .section-1-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .section-1-container img{
-    width: 100%;
-  }
-
-  .section-1-welcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: static;
-    gap: 1rem;
-    padding-top: 0rem;
-    margin: auto;
-    width: 80%;
-  }
-
-  .heading{
-    position: static;
-    font-size: 3.6rem;
-  }
-
-  .description {
-    text-align: justify;
-  }
-}
-
 
 .sect{
   text-align: center;
@@ -344,11 +291,7 @@ nav {
   color:#0064AF;
 }
 
-.main{
-  display: flex;
-  padding: 1.5rem;
-  justify-content: space-between;
-}
+
 
 .main .ic{
   display: flex;
@@ -358,6 +301,21 @@ nav {
 .main .ic p{
   display: flex;
   align-items:center ;
+}
+
+.wwe{
+  padding: 3rem;
+}
+
+.wwe h2{
+  color: #0064AF;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.wwe p{
+  font-size: 2rem;
+  text-align: center;
 }
 
 
@@ -403,6 +361,79 @@ nav {
 
 
 
+
+
+
+@media screen and (max-width: 1130px) {
+  .description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.043rem;
+    text-align: justify;
+  }
+
+  .section-1-container {
+    gap: 2rem;
+  }
+
+  .section-1-welcome {
+    gap: 1rem;
+  }
+
+  .heading {
+    top: 3%;
+    font-size: 5rem;
+  }
+
+}
+
+@media screen and (max-width: 870px) {
+  .section-1 {
+    padding: 0;
+  }
+
+
+  .section-1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-1-container img{
+    width: 100%;
+  }
+
+  .section-1-welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: static;
+    gap: 1rem;
+    padding-top: 0rem;
+    margin: auto;
+    width: 80%;
+  }
+
+  .heading{
+    position: static;
+    font-size: 3.6rem;
+  }
+
+  .description {
+    text-align: justify;
+  }
+
+  
+.main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 0rem 1rem 1rem 1rem;
+
+}
+}
+  
 
 
 
