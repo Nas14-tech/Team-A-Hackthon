@@ -85,6 +85,61 @@ nav {
   background: #163954;
 }
 
+.sect{
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color:#0064AF;
+}
+
+.main{
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+.main .ic{
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.main .ic p{
+  display: flex;
+  align-items:center ;
+}
+
+.wwe{
+  text-align: center;
+}
+
+.wwe h2{
+  font-size: 3rem;
+  color: blue;
+}
+
+/* footer */
+.foot{
+  background-color: black;
+  padding: 4rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.foot .header{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.foot .header p{
+  font-size: 1rem;
+  color: rgb(245, 245, 245, 0.5);
+}
+
 @media screen and (max-width: 800px) {
   .book {
     display: none;
