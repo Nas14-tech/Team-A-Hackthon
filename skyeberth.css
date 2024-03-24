@@ -85,6 +85,61 @@ nav {
   background: #163954;
 }
 
+.sect{
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color:#0064AF;
+}
+
+.main{
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+.main .ic{
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.main .ic p{
+  display: flex;
+  align-items:center ;
+}
+
+.wwe{
+  text-align: center;
+}
+
+.wwe h2{
+  font-size: 3rem;
+  color: blue;
+}
+
+/* footer */
+.foot{
+  background-color: black;
+  padding: 4rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.foot .header{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.foot .header p{
+  font-size: 1rem;
+  color: rgb(245, 245, 245, 0.5);
+}
+
 @media screen and (max-width: 800px) {
   .book {
     display: none;
@@ -206,6 +261,68 @@ nav {
   right: 7rem;
 }
 
+
+.sect{
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color:#0064AF;
+}
+
+.main{
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+.main .ic{
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.main .ic p{
+  display: flex;
+  align-items:center ;
+}
+
+/* footer */
+.foot{
+  background-color: black;
+  padding: 4rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.foot .header{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.foot .header p{
+  font-size: 1rem;
+  color: rgb(245, 245, 245, 0.5);
+}
+
+
+
+/* copyright tab */
+.copyright{
+  background-color: rgba(68, 68, 68, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.copyright .tab-2{
+  display: flex;
+  gap: 1rem;
+}
+
 @media screen and (max-width: 800px) {
 .message-icon{
   display: none;
@@ -277,93 +394,6 @@ nav {
   background: #000000;
 }
 
-.main{
-  display: flex;
-  padding: 1.5rem;
-  justify-content: space-between;
-}
-
-.sect{
-  text-align: center;
-  padding: 1rem;
-  font-size: 3rem;
-  font-weight: bold;
-  color:#0064AF;
-}
-
-
-
-.main .ic{
-  display: flex;
-  font-size: 1.5rem;
-}
-
-.main .ic p{
-  display: flex;
-  align-items:center ;
-}
-
-.wwe{
-  padding: 3rem;
-}
-
-.wwe h2{
-  color: #0064AF;
-  font-size: 4rem;
-  text-align: center;
-}
-
-.wwe p{
-  font-size: 2rem;
-  text-align: center;
-}
-
-
-/* footer */
-.foot{
-  background-color: black;
-  padding: 4rem;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  overflow: hidden;
-}
-
-.foot .header{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.foot .header p{
-  font-size: 1rem;
-  color: rgb(245, 245, 245, 0.5);
-}
-
-
-
-/* copyright tab */
-.copyright{
-  background-color: rgba(68, 68, 68, 1);
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem;
-}
-
-.copyright .tab-2{
-  display: flex;
-  gap: 1rem;
-}
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 1130px) {
   .description {
     font-size: 1.2rem;
@@ -384,14 +414,12 @@ nav {
     top: 3%;
     font-size: 5rem;
   }
-
 }
 
 @media screen and (max-width: 870px) {
   .section-1 {
     padding: 0;
   }
-
 
   .section-1-container {
     display: flex;
@@ -422,18 +450,50 @@ nav {
   .description {
     text-align: justify;
   }
+}
 
-  
+
+.sect{
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color:#0064AF;
+}
+
 .main{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+.main .ic{
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.main .ic p{
+  display: flex;
+  align-items:center ;
+}
+
+
+/* footer */
+.foot{
+  background-color: black;
+  padding: 4rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
   gap: 1rem;
   padding: 0rem 1rem 1rem 1rem;
+}
 
-}
-}
-  
+
+
+
+
+
 
 
 
