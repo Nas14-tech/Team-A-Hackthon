@@ -82,6 +82,7 @@ body{
 
 .nav-toggle{
     display: none;
+    background-color: transparent;
 }
 
 /* head */
@@ -301,6 +302,7 @@ body{
         display: block;
         padding: 0.5rem 1rem;
         transition: all 0.3s linear;
+        color: blue;
       }
       .links a:hover {
         color: #000000;

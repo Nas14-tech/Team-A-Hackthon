@@ -107,6 +107,8 @@ nav {
 .main .ic p{
   display: flex;
   align-items:center ;
+  color: #0064AF;
+  font-weight: bolder;
 }
 
 .wwe{
@@ -407,6 +409,25 @@ nav {
   .main{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    padding-left: rem;
+    gap: 1rem;
+  }
+
+  .wwe h2{
+    color: #0064AF;
+  }
+
+
+  .ic img{
+    width: 70px;
+  }
+
+  .ic p{
+    font-size: 1rem;
+  }
+
+  .wwe p{
+    font-size: 1rem;
   }
 
   .foot{
