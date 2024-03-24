@@ -1,0 +1,409 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Open sans-serif;
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* 
+Nav Bar
+*/
+nav {
+    background: #ffffff;
+}
+
+.nav-center {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+.nav-header {
+    padding: 0;
+}
+  .nav-toggle {
+    display: none;
+  }
+
+
+.nav-header img{
+  height: 60px;
+}
+
+.links {
+  height: auto;
+  display: flex;
+  width: 45%;
+  justify-content: space-between;
+  
+}
+.links a {
+  padding: 0;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+.links a:hover {
+  padding: 0;
+  background: transparent;
+  color: #ffffff;
+}
+
+.book {
+  width: 114px;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  background: #163954;
+}
+
+@media screen and (max-width: 800px) {
+  .book {
+    display: none;
+  }
+  body {
+    position: relative;
+  }
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 100;
+    width: 100%;
+    display: block;
+  }
+  .nav-center{
+    display: block;
+    width: 100%;
+  }
+
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .links a {
+    font-size: 1rem;
+    text-transform: capitalize;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+  }
+  .links a:hover {
+    color: #000000;
+    padding: 0.5rem 1rem;
+  }
+ 
+  .links {
+    height: 0;
+    overflow: hidden; 
+    display: block;
+    width: 100%;
+    transition: all 0.3s linear;
+  }
+  .show-links {
+    height: 15rem;
+  }
+  .nav-toggle {
+    display: block;
+    font-size: 1.5rem;
+    color: #000000;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.nav-toggle:hover {
+  transform: rotate(90deg);
+}
+}
+
+/* HERO */
+.hero {
+  background-image: url("./image/home.jpeg");
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  padding: 10.125rem 5.2rem;
+  position: relative;
+}
+
+.hero-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 50%;
+}
+
+.hero-body h1{
+  font-size: 4.375rem;
+  font-weight: 800;
+  line-height: 5.958rem;
+  text-align: left;
+  color: #ffffff;
+}
+
+.hero-body p {
+  font-size: 1.5625rem;
+  font-weight: 600;
+  line-height: 2.128rem;
+  text-align: left;
+  color: #ffffff;
+}
+
+.hero-body button {
+   border: 1px #ffffff solid;
+   padding: 0.625rem 0.9375rem;
+   background: transparent;
+   color: #ffffff;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.276875rem;
+}
+
+.message-icon {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  bottom: 2rem;
+  right: 7rem;
+}
+
+@media screen and (max-width: 800px) {
+.message-icon{
+  display: none;
+}
+.hero {
+  padding-left: 2rem;
+}
+.hero-body {
+  width: 100%;
+}
+}
+
+/* Section 1 */
+.section-1 {
+  background: rgb(231, 231, 231);
+  padding: 4rem 4rem 0 0;
+}
+
+.section-1-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.section-1-container img{
+  width: 60%;
+  height: auto;
+}
+
+.section-1-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  gap: 4.9rem;
+  padding-top: 10rem;
+}
+
+.heading {
+  color:#0064AF;
+  font-size: 6.8rem;
+  font-weight: 800;
+  line-height: 8.001rem;
+  position: absolute;
+  white-space: nowrap;
+  right: 0px;
+  top: -10%;
+}
+
+.description {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.043rem;
+  text-align: justified;
+}
+
+.note {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.68px;
+  text-align: justified;
+}
+
+.brick {
+  width: 40px;
+  height: 4px;
+  top: 37px;
+  background: #000000;
+}
+
+@media screen and (max-width: 1130px) {
+  .description {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.043rem;
+    text-align: justify;
+  }
+
+  .section-1-container {
+    gap: 2rem;
+  }
+
+  .section-1-welcome {
+    gap: 1rem;
+  }
+
+  .heading {
+    top: 3%;
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .section-1 {
+    padding: 0;
+  }
+
+  .section-1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-1-container img{
+    width: 100%;
+  }
+
+  .section-1-welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: static;
+    gap: 1rem;
+    padding-top: 0rem;
+    margin: auto;
+    width: 80%;
+  }
+
+  .heading{
+    position: static;
+    font-size: 3.6rem;
+  }
+
+  .description {
+    text-align: justify;
+  }
+}
+
+
+.sect{
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color:#0064AF;
+}
+
+.main{
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+.main .ic{
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.main .ic p{
+  display: flex;
+  align-items:center ;
+}
+
+
+/* footer */
+.foot{
+  background-color: black;
+  padding: 4rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.foot .header{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.foot .header p{
+  font-size: 1rem;
+  color: rgb(245, 245, 245, 0.5);
+}
+
+
+
+/* copyright tab */
+.copyright{
+  background-color: rgba(68, 68, 68, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.copyright .tab-2{
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    /* border: 1px solid red; */
+}
+
+body{
+    background-color: rgb(230, 246, 251, 0.5);
+
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.navbar .logo{
+    display: flex;
+    margin-right: 2rem;
+}
+
+.navbar .logo svg{
+    height: 70px;
+    width: 40px;
+    color: rgba(63, 175, 210, 1);
+}
+
+.navbar .logo h2{
+    color: rgba(63, 175, 210, 1);
+    margin-top: 0.5rem;
+}
+
+.navbar .logo p{
+    margin-top: 0.3rem;
+}
+
+.navbar .menu{
+    display: flex;
+    gap: 3rem;
+    margin-right: 2rem;
+    font-weight: bold;
+}
+
+.navbar .menu .menu-menu{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    gap: 2rem;
+}
+
+.navbar .menu .menu-menu li{
+    list-style: none;
+}
+
+.navbar .menu .menu-menu a{
+    text-decoration: none;
+}
+
+.navbar .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar button{
+    background-color: rgba(22, 57, 84, 1);
+    color: white;
+    padding: 0.7rem;
+    text-wrap: nowrap;
+    border: none;
+}
+
+.navbar button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* head */
+
+.head{
+    background-image: url(/Suites/Image/a660bfb6b21a1df3365976d090781c62.png);
+    background-repeat: no-repeat no-repeat;
+    overflow: hidden;
+    background-position: center center;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: end;
+    height: 500px;
+    width: auto;
+}
+
+
+/* room tab-1 */
+.room-1{
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-1 .rm{
+    display: flex;
+    gap: 2rem;
+}
+
+.room-1 h2{
+    margin-top: 3rem;
+}
+
+.room-1 .line{
+    height: 5px;
+    width: 70px;
+    background-color: rgba(22, 57, 84, 1);
+    margin-top: 4rem;
+}
+
+.room-1 img{
+    /* background-image: url(/Suites/Image/02395d119b074ea6c3778810f6e37dc2.png); */
+    background-repeat: no-repeat no-repeat;
+    overflow: hidden;
+    background-position: center center;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: end;
+    /* height: 500px; */
+    aspect-ratio: 2/1;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.select{
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.select img{
+    /* background-image: url(/Suites/Image/02395d119b074ea6c3778810f6e37dc2.png); */
+    /* background-repeat: no-repeat no-repeat; */
+    overflow: hidden;
+    /* background-position: center center; */
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: end;
+    height: 200px;
+    width: 300px;
+    margin-left: 4rem;
+}
+
+.select .img2{
+    background-image: url(/Suites/Image/2e7dca03f3358fb5f7201dfbcfd1d57b.png);
+    background-repeat: no-repeat no-repeat;
+    overflow: hidden;
+    background-position: center center;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: end;
+    height: 200px;
+    width: 300px;
+}
+
+.select .img3{
+    overflow: hidden;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: end;
+    height: 200px;
+    width: 300px;
+    margin-right: 4rem;
+}
+
+/* features */
+
+.features{
+    display: flex;
+    margin: 4rem;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.features .ftr{
+    height:200px;
+    width: 320px;
+    border: 0.1rem solid black;
+    text-align: center;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* button */
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn button{
+    padding: 1.5rem 0rem 1.5rem 0rem;
+    width: 50%;
+    margin-bottom: 5rem;
+    border-radius: 0.7rem;
+    border: none;
+    background-color: rgba(22, 57, 84, 1);
+}
+
+.btn button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+.foot{
+    background-color: black;
+    padding: 4rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.foot .header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot .header p{
+    font-size: 0.5rem;
+    color: rgb(245, 245, 245, 0.5);
+}
+
+
+
+/* copyright tab */
+.copyright{
+    background-color: rgba(68, 68, 68, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.copyright .tab-2{
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+ 

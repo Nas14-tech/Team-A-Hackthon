@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    /* border: 1px solid red; */
+}
+
+body{
+    background-color: rgb(230, 246, 251, 0.5);
+
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    padding: 1rem 2rem 1rem 2rem;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.navbar .logo{
+    display: flex;
+    margin-right: 2rem;
+}
+
+.navbar .logo svg{
+    height: 70px;
+    width: 40px;
+    color: rgba(63, 175, 210, 1);
+}
+
+.navbar .logo h2{
+    color: rgba(63, 175, 210, 1);
+    margin-top: 0.5rem;
+}
+
+.navbar .logo p{
+    margin-top: 0.3rem;
+}
+
+.navbar .menu{
+    display: flex;
+    gap: 3rem;
+    margin-right: 2rem;
+    font-weight: bold;
+}
+
+.navbar .menu .menu-menu{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    gap: 2rem;
+}
+
+.navbar .menu .menu-menu li{
+    list-style: none;
+}
+
+.navbar .menu .menu-menu a{
+    text-decoration: none;
+}
+
+.navbar .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar button{
+    background-color: rgba(22, 57, 84, 1);
+    color: white;
+    padding: 0.7rem;
+    text-wrap: nowrap;
+    border: none;
+}
+
+.navbar button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* head */
+
+.head{
+    background-image: url(/Suites/Image/head.jpeg);
+    background-repeat: no-repeat no-repeat;
+    overflow: hidden;
+    background-position: center center;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: end;
+    height: 500px;
+    width: auto;
+}
+
+/* styling the floating tab */
+.float{
+    /* border: 0.2rem solid black; */
+    width: 60vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    position: relative;
+    top: -50px;
+    left: 20%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.float .tab-1{
+    display: flex;
+    justify-content: space-around ;
+    gap: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    /* overflow-x: scroll; */
+}
+
+.float .tab-1 .hostel{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.float .tab-1 .hostel label{
+    text-align: center;
+}
+
+.float .tab-1 .hostel select{
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    /* min-width: 250px; */
+    border-radius: 0.5rem;
+    background-color: rgb(230, 246, 251, 0.5);
+}
+
+
+.float .tab-2{
+    display: flex;
+    justify-content: center;
+}
+
+.float .tab-2 button{
+    width: 30%;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    background-color: rgba(22, 57, 84, 1);
+    color: white;
+    border: none;
+}
+
+.float .tab-2 button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* styling for room-tabs */
+
+.rooms-tab{
+    padding: 2rem 0rem 2rem 4rem;
+    margin-right: 2.5rem;
+    overflow-x: scroll;
+    position: relative;
+    
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem; */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+}
+
+.rooms-tab .room{
+    display: flex;
+    flex-direction: column;
+}
+
+.rooms-tab .room .img{
+    background-image: url(/Suites/Image/02395d119b074ea6c3778810f6e37dc2.png);
+    /* height: 400px; */
+    width: 100%;
+    aspect-ratio: 4/3;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rooms-tab .room .text{
+    background-color: gray;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.rooms-tab .room .tab-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 3rem;
+    background-color: white;
+}
+
+.rooms-tab .room .tab-3 .avb{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(22, 57, 84, 1);
+}
+
+.rooms-tab .room .tab-3 .available{
+    display: flex;
+    gap: 1rem;
+    color: rgba(22, 57, 84, 1);
+}
+
+.rooms-tab .room .tab-3 button{
+    width: 100%;
+    padding: 1rem 0rem 1rem 0;
+    background-color: rgba(22, 57, 84, 1);
+}
+
+.rooms-tab .room .tab-3 button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.foot{
+    background-color: black;
+    padding: 4rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.foot .header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.foot .header p{
+    font-size: 0.5rem;
+    color: rgb(245, 245, 245, 0.5);
+}
+
+
+
+/* copyright tab */
+.copyright{
+    background-color: rgba(68, 68, 68, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.copyright .tab-2{
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+ 

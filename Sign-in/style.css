@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+    height: auto;
+    width: auto;
+    margin: 2rem;
+}
+
+.main img{
+    height: 500px;
+    width: 600px;
+}
+
+.main .tab{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    padding: 2rem;
+    width: 450px;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.main .tab h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main .tab .inp{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.main .tab .inp input{
+    background-color: #f1f1f1;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.psw{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: rgb(12, 24, 132);
+}
+
+.tab .sign-in{
+    text-align: center;
+}
+
+.tab .sign-in button{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    background-color: rgb(12, 24, 132);
+    color: white;
+}
+
+.tab .sign-in button a{
+    text-decoration: none;
+    color: white;
+}
+
+.tab .sign-up{
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(12, 24, 132);
+}
+
+.tab .sign-up a{
+    font-weight: bold;
+    text-decoration: none;
+}
