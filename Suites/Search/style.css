@@ -39,25 +39,25 @@ body{
     margin-top: 0.3rem;
 }
 
-.navbar .menu{
+.navbar .links{
     display: flex;
     gap: 3rem;
     margin-right: 2rem;
     font-weight: bold;
 }
 
-.navbar .menu .menu-menu{
+.navbar .links .menu-menu{
     display: flex;
     align-items: center;
     padding: 0 1rem 0 1rem;
     gap: 2rem;
 }
 
-.navbar .menu .menu-menu li{
+.navbar .links .menu-menu li{
     list-style: none;
 }
 
-.navbar .menu .menu-menu a{
+.navbar .links .menu-menu a{
     text-decoration: none;
 }
 
@@ -67,7 +67,7 @@ body{
     justify-content: center;
 }
 
-.navbar button{
+.navbar .button button{
     background-color: rgba(22, 57, 84, 1);
     color: white;
     padding: 0.7rem;
@@ -75,11 +75,14 @@ body{
     border: none;
 }
 
-.navbar button a{
+.navbar .button button a{
     text-decoration: none;
     color: white;
 }
 
+.nav-toggle{
+    display: none;
+}
 /* head */
 
 .head{
@@ -225,6 +228,7 @@ body{
 
 
 
+
 .foot{
     background-color: black;
     padding: 4rem;
@@ -260,6 +264,103 @@ body{
     gap: 1rem;
 }
 
+@media screen and (max-width: 800px) {
+    body {
+        position: relative;
+      }
+
+
+    .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        z-index: 100;
+        width: 100%;
+        display: block;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+      }
+
+      .navbar .links .menu-menu{
+        display: grid;
+        gap: 1rem;
+    }
+
+    .links .menu-menu a {
+        font-size: 1rem;
+        text-transform: capitalize;
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s linear;
+      }
+      .links .menu-menu a:hover {
+        color: #000000;
+        padding: 0.5rem 1rem;
+      }
+     
+      .links {
+        height: 0;
+        overflow: hidden; 
+        display: block;
+        width: 100%;
+        transition: all 0.3s linear;
+      }
+
+      .show-links {
+        height: 15rem;
+      }
+
+
+    .nav-toggle {
+        display: block;
+        font-size: 1.5rem;
+        color: black;
+        background: transparent;
+        border: 2px dashed black;
+        border-color: black;
+        transition: all 0.3s linear;
+        height: 20px;
+        width: 30px;
+        cursor: pointer;
+    }
+    
+    .nav-toggle:hover {
+      transform: rotate(90deg);
+    }
+
+    .navbar .button button{
+        display: none;
+    }
+    
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+      }
+    
+      .header p{
+        display: flex;
+        flex-direction: column;  
+      }
+    
+      .header p a{
+        color: gray;
+        text-decoration: none;
+      }
+
+      .features .ftr{
+        height: 200px;
+        width: 300px;
+      }
+   
+}
 
 
  

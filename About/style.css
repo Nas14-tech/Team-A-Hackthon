@@ -63,7 +63,7 @@
     border: none;
 }
 
-.navbar button{
+.navbar .button button{
     background-color: rgba(22, 57, 84, 1);
     color: white;
     padding: 0.7rem;
@@ -201,11 +201,13 @@
 .main-mission h2{
     font-size: 4rem;
     color: rgb(30, 99, 183);
+    padding-bottom: 0rem;
 
 }
 
 .main-mission p{
     font-size: 1rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -270,6 +272,11 @@
         width: 100%;
       }
 
+      .navbar .links .menu-menu{
+        display: grid;
+        gap: 1rem;
+    }
+
     .links a {
         font-size: 1rem;
         text-transform: capitalize;
@@ -289,6 +296,7 @@
         width: 100%;
         transition: all 0.3s linear;
       }
+
       .show-links {
         height: 15rem;
       }
@@ -296,10 +304,13 @@
     .nav-toggle {
         display: block;
         font-size: 1.5rem;
-        color: #000000;
+        color: black;
         background: transparent;
-        border-color: transparent;
+        border: 2px dashed black;
+        border-color: black;
         transition: all 0.3s linear;
+        height: 20px;
+        width: 30px;
         cursor: pointer;
     }
     
@@ -307,7 +318,7 @@
       transform: rotate(90deg);
     }
 
-    .navbar .button{
+    .navbar .button button{
         display: none;
     }
     
@@ -316,12 +327,18 @@
         display: grid;
         gap: 1rem;
         padding: 0.5rem 0rem 0.5rem 0rem;
+        width: 100%;
         text-align: center;
+        position: relative;
     }
 
     .main-vision .text{
         display: flex;
         align-items: center;
+    }
+
+    .main-vision img{
+        width: 100%;
     }
 
     .main-vision .text p{
@@ -333,6 +350,10 @@
         text-align: center;
         position: relative;
         /* padding: 0rem 1rem 0rem 1rem; */
+    }
+
+    .main-mission h2{
+        font-size: 2.5rem;
     }
 
     .main-mission img{

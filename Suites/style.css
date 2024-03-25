@@ -67,7 +67,7 @@ body{
     justify-content: center;
 }
 
-.navbar button{
+.navbar .button button{
     background-color: rgba(22, 57, 84, 1);
     color: white;
     padding: 0.7rem;
@@ -75,14 +75,14 @@ body{
     border: none;
 }
 
-.navbar button a{
+.navbar .button button a{
     text-decoration: none;
     color: white;
 }
 
 .nav-toggle{
     display: none;
-    background-color: transparent;
+    
 }
 
 /* head */
@@ -296,7 +296,12 @@ body{
         width: 100%;
       }
 
-    .links a {
+     .navbar .links .menu-menu{
+        display: grid;
+        gap: 1rem;
+     }
+
+    .links .menu-menu a{
         font-size: 1rem;
         text-transform: capitalize;
         display: block;
@@ -304,7 +309,7 @@ body{
         transition: all 0.3s linear;
         color: blue;
       }
-      .links a:hover {
+      .links .menu-menu a:hover {
         color: #000000;
         padding: 0.5rem 1rem;
       }
@@ -325,16 +330,18 @@ body{
         font-size: 1.5rem;
         color: #000000;
         background: transparent;
-        border-color: transparent;
+        border: 2px dashed black;
         transition: all 0.3s linear;
         cursor: pointer;
+        height: 20px;
+        width: 30px;
     }
     
     .nav-toggle:hover {
       transform: rotate(90deg);
     }
 
-    .navbar .button{
+    .navbar .button button{
         display: none;
     }
     
@@ -342,6 +349,7 @@ body{
     .float{
         width: 100%;
         left: 0;
+        display: grid;
         overflow: scroll;
     }
 
